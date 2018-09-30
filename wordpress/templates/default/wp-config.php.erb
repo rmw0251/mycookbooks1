@@ -33,11 +33,11 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-/** s3 bucket stuff 
-define( 'S3_UPLOADS_BUCKET', 's3wordpressassignment' );
-define( 'S3_UPLOADS_KEY', '' );
-define( 'S3_UPLOADS_SECRET', '' );
-define( 'S3_UPLOADS_REGION', '' ); */
+/** s3 bucket stuff */
+define( 'S3_UPLOADS_BUCKET', '#{node[bucket]}' );
+define( 'S3_UPLOADS_KEY', '#{node[key]}' );
+define( 'S3_UPLOADS_SECRET', '#{node[secret]}' );
+define( 'S3_UPLOADS_REGION', '#{node[region]}' ); 
 
 
 /**
