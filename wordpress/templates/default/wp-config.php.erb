@@ -1,4 +1,11 @@
 <?php
+
+define( 'AS3CF_SETTINGS', serialize( array(
+    'provider' => 'aws',
+    'access-key-id' => '#{node[key]}',
+    'secret-access-key' => '#{node[secret]}',
+) ) );
+
 /**
  * The base configurations of the WordPress.
  *
@@ -38,6 +45,8 @@ define( 'S3_UPLOADS_BUCKET', '#{node[bucket]}' );
 define( 'S3_UPLOADS_KEY', '#{node[key]}' );
 define( 'S3_UPLOADS_SECRET', '#{node[secret]}' );
 define( 'S3_UPLOADS_REGION', '#{node[region]}' ); 
+
+
 
 
 /**
